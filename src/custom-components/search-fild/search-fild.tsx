@@ -1,5 +1,5 @@
 import Container from "../container"
-
+import style from './search-fild.module.css'
 
 
 type  SearchFildType = {
@@ -19,7 +19,8 @@ const SearchFild = (props:SearchFildType)=>{
     return(
         <Container containerStyle={inputContainerClass}>
             <input
-             className={inputFildStyle}
+             style={{direction :'rtl'}}
+             className={`${inputFildStyle} ${style['input-fild']}`}
              placeholder={inputplaceholder}/>
              {props.children}
         </Container>

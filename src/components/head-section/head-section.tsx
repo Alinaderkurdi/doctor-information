@@ -11,7 +11,7 @@ type headType = {
 
 const HeadSection = (props:headType)=>{
     return(
-        <header className="flex items-center justify-around h-20 bg-white">
+        <header className="flex items-center justify-around h-20 bg-white sticky top-0">
            <FilterSection />
            <SearchBar />
         </header>
