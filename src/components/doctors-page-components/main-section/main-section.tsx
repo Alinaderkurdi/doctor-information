@@ -1,6 +1,6 @@
 import DoctorList from "./doctors-list/doctor-list";
 import { NavLink } from "react-router-dom";
-
+import style from "./main-section-global.module.css"
 
 //when this page is mount in dom send http to the end point to get all data about doctors 
 //and every doctor name is a end point and when that end point is active in url we can get specific data about doctor !
@@ -10,7 +10,7 @@ import { NavLink } from "react-router-dom";
 const MainSection = ()=>{
     return(
         <main className="w-full  min-h-full mt-3 sm:max-w-lg sm:mx-auto">
-            <h3 className="mr-2"  style={{direction :'rtl'}}>
+            <h3 className={`mr-2 ${style['font-direction-style']}`}>
                 لیست پزشکان
             </h3>
            <NavLink to={`/doctor-profile/${"a"}`}>
