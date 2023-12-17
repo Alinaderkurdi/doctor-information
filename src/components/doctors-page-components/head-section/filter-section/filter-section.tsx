@@ -1,5 +1,5 @@
-import Container from "../../../custom-components/container";
-import Button from "../../../custom-components/custom-button/custom-button";
+import Button from "../../../../custom-components/custom-button/custom-button";
+import Container from "../../../../custom-components/container";
 
 
 const FilterSection = ()=>{

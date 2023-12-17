@@ -1,18 +1,27 @@
 import React from 'react';
 import './App.css';
-import HeadSection from './components/head-section/head-section';
-import MainSection from './components/main-section/main-section';
-import FooterSection from './components/footer-section/footer-section';
 
+
+
+import Home from './components/page/home/home';
+import FallowApp from './components/page/fallow-app/fallow-app';
+import Doctors from './components/page/doctors/doctors';
+import UserProfile from './components/page/user-profile/user-profile';
+import { Routes, Route } from 'react-router-dom';
+import DoctorProfileMain from './components/doctor-profile/doctor-profile-main';
 
 
 
 function App() {
   return(
-    <div className="bg-[#F4F8F8] w-full min-h-screen max-w-2xl">
-      <HeadSection />
-      <MainSection />
-      <FooterSection />
+    <div className=" w-full min-h-screen">
+      <Routes >
+        <Route path='/home' element={<Home/>}/>
+        <Route path='/fallow-app' element={<FallowApp/>}/>
+        <Route path='/' element={<Doctors />}/>
+        <Route path='/user-profile' element={<UserProfile />}/>
+        <Route path='/doctor-profile/:id' element={<DoctorProfileMain />}/>
+      </Routes>
     </div>
   )
 }

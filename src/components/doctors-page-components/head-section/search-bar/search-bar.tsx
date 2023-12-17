@@ -1,6 +1,8 @@
-import Container from "../../../custom-components/container";
-import Button from "../../../custom-components/custom-button/custom-button";
-import SearchFild from "../../../custom-components/search-fild/search-fild";
+
+import Button from "../../../../custom-components/custom-button/custom-button";
+import SearchFild from "../../../../custom-components/search-fild/search-fild";
+
+
 
 const SearchBar = ()=>{
 
