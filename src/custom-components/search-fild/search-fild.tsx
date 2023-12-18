@@ -10,7 +10,7 @@ type  SearchFildType = {
 }
 
 
-
+// this input fild must get function pointer for diffrent event !
 //use input fild in diffrent use cases
 
 const SearchFild = (props:SearchFildType)=>{

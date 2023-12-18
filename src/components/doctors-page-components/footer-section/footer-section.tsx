@@ -6,11 +6,11 @@ import style from './footer.module.css'
 
 const FooterSection = ()=>{
     return(
-        <footer className="sticky bottom-0 w-full h-16 bg-white block">
+        <footer className="sticky bottom-0 w-full  h-16 bg-white block mt-auto bg">
             <Container containerStyle=" flex justify-around items-center  sm:max-w-lg sm:mx-auto">
-               <NavLink style={({ isActive, isPending})=>{
-                return{
-                  fontWeight: isActive ? "bold" : "",
+               <NavLink  style={({isActive, isPending})=>{
+                return {
+                    color: isActive ? "red" : ""
                 }
                }} to={"/user-profile"} className={`${"flex flex-col items-center"} ${style['nav-link-style']}`}>
                 <i className="bi bi-person text-[1.7rem]"></i>

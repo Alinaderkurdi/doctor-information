@@ -1,9 +1,7 @@
 import Container from "../../../custom-components/container";
-import Button from "../../../custom-components/custom-button/custom-button";
 import { NavLink } from "react-router-dom";
 
 
-//border-red-600  border-[1px]
 
 
 const DoctorProfileHead = ()=>{

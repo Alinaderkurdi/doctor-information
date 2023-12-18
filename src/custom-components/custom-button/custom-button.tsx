@@ -7,6 +7,7 @@ type custonButtonType = {
     setButtonState? : boolean 
 }
 
+//this button is only for render in ui but  latter must get function pointer for diffrent event
 
 const Button = (props: custonButtonType )=>{
     const {children , buttonStyle , setButtonState} = props

@@ -1,5 +1,6 @@
 import Container from "../../../custom-components/container"
-import imag from '../../../426040919_2046 (2).jpg'
+import imag from '../../../images/Screenshot 2023-12-18 163142.png'
+
 
 type aboutDoctorType = {
     image?: string
@@ -7,12 +8,11 @@ type aboutDoctorType = {
     expertise: string
 }
 
-//border-[1px] border-red-500
 
 const AboutDoctor = (props:aboutDoctorType)=>{
     const {name , expertise , image} = props
     return(
-        <Container containerStyle="flex flex-row-reverse mt-2 p-2 border-[1px] border-red-500 w-[98%] mx-auto">
+        <Container containerStyle="flex flex-row-reverse mt-2 p-2  w-[98%] mx-auto">
             <Container containerStyle="w-14 h-14 ml-3">
                 <img src={imag} alt={'image'} className="w-14 h-14 rounded-full"/>
             </Container>

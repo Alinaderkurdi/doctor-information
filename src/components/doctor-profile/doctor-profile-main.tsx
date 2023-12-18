@@ -5,9 +5,10 @@ import WorkPlaneMain from "./weekly-plane/work-plane-main";
 import MoreInfo from "./more-info/more-info";
 import InfoBox from "./info-box/info-box";
 import { useParams } from "react-router-dom";
+import GetVistTime from "./get-vist-time/get-vist-time";
 
 
-
+//all this component can get data based on doctor name 
 
 const DoctorProfileMain = ()=>{
   const {id:doctorID} = useParams()
@@ -15,15 +16,16 @@ const DoctorProfileMain = ()=>{
   console.log(`send http for www.iedomain/doctor-profile/${doctorID}`)
   
     return(
-      <Container containerStyle="w-full sm:max-w-lg sm:mx-auto  bg-[#F4F8F8] border-[1px] border-red-500 min-h-full">
+      <Container containerStyle="w-full sm:max-w-lg sm:mx-auto  bg-[#F4F8F8]  flex flex flex-col min-h-screen">
         <DoctorProfileHead />
         <DoctorAbout 
-         name={'علی نادرکردی'}
-         expertise={'متخصص جراحی قلب '}
+         name={"رضا رحیمی "}
+         expertise={"متخصص گوارش و بیماری های گوارش"}
         />
-        <InfoBox />
+        <InfoBox  />
         <MoreInfo />
         <WorkPlaneMain/>
+        <GetVistTime />{/** GetVistTime get a boolean from db to active*/}
       </Container>
     )
 }

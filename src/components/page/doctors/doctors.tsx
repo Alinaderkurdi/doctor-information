@@ -8,10 +8,12 @@ const Doctors = ()=>{
     
   return(
     <>
-    <HeadSection />
-    <MainSection />
-    <FooterSection />
+       <HeadSection />
+       <MainSection />
+      <FooterSection />
     </>
+   
+  
   )
 }
 

@@ -9,6 +9,7 @@ import Doctors from './components/page/doctors/doctors';
 import UserProfile from './components/page/user-profile/user-profile';
 import { Routes, Route } from 'react-router-dom';
 import DoctorProfileMain from './components/doctor-profile/doctor-profile-main';
+import NotFoundPage from './components/page/custom-404-page/no-found-page';
 
 
 
@@ -21,6 +22,7 @@ function App() {
         <Route path='/' element={<Doctors />}/>
         <Route path='/user-profile' element={<UserProfile />}/>
         <Route path='/doctor-profile/:id' element={<DoctorProfileMain />}/>
+        <Route path='*' element={<NotFoundPage />}/>
       </Routes>
     </div>
   )
